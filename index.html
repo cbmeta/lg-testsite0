@@ -37,7 +37,7 @@
     <h2>pixel test page</h2>
     <div>
     <ul>
-        <li><button id="addToWishlistButton" type="button">Add to Wishlist</button></li>
+        <li><button id="addToWishlistButton" type="button">Add to Wishlist x 5</button></li>
         <li><button id="addToCartButton" type="button">Add to Cart</button></li>
         <li><button id="checkoutButton" type="button">Check Out</button></li>
         <li><button id="purchaseButton" type="button">Purchase</button></li>
@@ -58,7 +58,7 @@ document.getElementById('addToWishlistButton').addEventListener('click', functio
   cbq('track', 'AddToWishlist');
 }, false);
 
-document.getElementById('addToCartButton').addEventListener('click', function() {
+document.getElementById('addToCartButton').addEventListener('click', function() for(var i = 0; i < 10; i++) {
   cbq('track', 'AddToCart');
 }, false);
 
