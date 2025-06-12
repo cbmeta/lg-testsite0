@@ -55,6 +55,7 @@
   <li><button id="donateButton" type="button">Donate (x10)</button></li>
   <li><button id="rateButton" type="button">Rate (x10)</button></li>
   <li><button id="adClickButton" type="button">AdClick (x10)</button></li>
+  <li><button id="purchaseNoValueButton" type="button">Purchase With No Value (x10)</button></li>
 </ul></div>
 <script type="text/javascript">
   for(var i = 0; i < 10; i++) {
@@ -70,7 +71,8 @@ document.getElementById('searchButton').addEventListener('click', function() {cb
 document.getElementById('contactButton').addEventListener('click', function() {cbq('track', 'Contact'); }, false);    
 document.getElementById('donateButton').addEventListener('click', function() {cbq('track', 'Donate'); }, false);    
 document.getElementById('rateButton').addEventListener('click', function() {cbq('track', 'Rate'); }, false);    
-document.getElementById('adClickButton').addEventListener('click', function() {cbq('track', 'AdClick'); }, false);    
+document.getElementById('adClickButton').addEventListener('click', function() {cbq('track', 'AdClick'); }, false);
+document.getElementById('purchaseNoValueButton').addEventListener('click', function() {cbq('track', 'Purchase', {currency: 'USD',});}, false);
 }
 </script>
 </body>
